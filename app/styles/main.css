@@ -1,0 +1,29 @@
+body {
+    margin: 10px;
+}
+
+.table {
+    margin-top: 10px;
+    width: 600px;
+}
+
+form {
+    width: 700px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.btns-form {
+    margin-left: 120px;
+}
+
+.sortorder:before {
+    content: '\2b07';
+}
+.sortorder.reverse:before {
+    content: '\2b06';
+}
+
+

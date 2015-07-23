@@ -1,0 +1,28 @@
+<h1>Navigation Data for {{customer.firstname}} {{customer.lastname}}</h1>
+
+<table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th ng-click="order('page')">
+            <span class="sortorder" ng-show="predicate === 'page'" ng-class="{reverse:reverse}"></span>
+            Pages
+        </th>
+        <th ng-click="order('timestamp')">
+            <span class="sortorder" ng-show="predicate === 'timestamp'" ng-class="{reverse:reverse}"></span>
+            Timestamp
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr ng-repeat="navigation in currentCustomerNavis | orderBy:predicate:reverse">
+        <td>{{navigation.page}}</td>
+        <td>{{navigation.timestamp}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-primary" ng-click="cancelAction()">
+    Back To Overview
+</button>

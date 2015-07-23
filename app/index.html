@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Customer Overview</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div ng-view></div>
+
+<!-- Scripts -->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/customer_list.js"></script>
+<script src="scripts/controllers/navigation_list.js"></script>
+<script src="scripts/controllers/new_customer.js"></script>
+<script src="scripts/controllers/edit_customer.js"></script>
+<script src="scripts/services/customer_data.js"></script>
+<script src="scripts/services/navigation_data.js"></script>
+<script src="scripts/filters/age_filter.js"></script>
+<script src="scripts/filters/gender_filter.js"></script>
+</body>
+</html>
